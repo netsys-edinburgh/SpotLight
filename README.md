@@ -8,7 +8,7 @@ Procedure-1(Used to calculate total runtime form exponential histogram)
 In exponential histogram, bucket size is not fixed and bucket size is 2i where i=0…n  
 
  
-    `def calc_runtime(self, bin): 
+    `def calc_runtime(self, bin):` 
 
         total = 0 
 
