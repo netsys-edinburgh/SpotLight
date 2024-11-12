@@ -1,3 +1,3 @@
-Radio KPI
-Platform KPI
-Network KPI
+* Radio KPI
+* Platform KPI
+* Network KPI
