@@ -36,8 +36,7 @@ In exponential histogram, bucket size is not fixed and bucket size is 2i where i
 Procedure-2 (Used to calculate avg/mean from shift type histogram ) 
 
 In exponential histogram, bucket size is fixed. Shift is used to calculate size of bucket in histogram. Bucket size = 2shift i.e. each bucket can hold 2shift elements. Different shift is used based on the kpi range. E.g. for mcs shift is 2, for prb shift is 5 etc.  
-
-    ```
+```
     def calc_avg(self, bin,shift, min, max): 
 
         total = 0 
@@ -83,4 +82,4 @@ In exponential histogram, bucket size is fixed. Shift is used to calculate size 
                 # total=0 
 
         return total/sum(bin)
-        ``` 
+``` 
