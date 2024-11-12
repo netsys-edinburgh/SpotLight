@@ -8,7 +8,7 @@ Procedure-1(Used to calculate total runtime form exponential histogram)
 In exponential histogram, bucket size is not fixed and bucket size is 2i where i=0…n  
 
  
-    ```def calc_runtime(self, bin): 
+    ~~~def calc_runtime(self, bin): 
 
         total = 0 
 
@@ -27,10 +27,8 @@ In exponential histogram, bucket size is not fixed and bucket size is 2i where i
                 # Calculate total for this bin using formulas 
 
                 total += items_per_bin * ((range_start + range_end) * range_size/2) 
-
- 
-
-        return total``` 
+                
+        return total~~~ 
 
  
 
