@@ -1,6 +1,29 @@
 * Radio KPI
 * Platform KPI
 * Network KPI
+Anomaly Creation:  
+
+Methodology: Artificial anomalies are created by mimicking real-world anomaly scenarios. These scenarios are: 
+
+CPU contention:  CPU contention is when multiple processes or applications compete for the same CPU resources, leading to performance degradation. This can be triggered in two ways: by an external process or by the misplacement of RAN threads. 
+
+External Process: External processes running on the system can cause CPU contention.   
+
+Misplacement of RAN Threads: The placement of RAN threads on the CPU cores where they are not supposed to run can also lead to contention. 
+
+In our experiments, three anomalies are caused by CPU contention: 
+
+CU contention: To induce CU contention, the pdcp_worker_0 thread is subjected to stress using the tool stress-ng. The stress is applied periodically with varying durations to achieve different anomaly mixes. 
+
+Scheduler contention: To induce Scheduler contention, the TxCtrl_DU11_C0 thread is stressed using program running while loop performing some dummy operation. (RAN can crash if we use stress-ng to stress the scheduler thread).  
+
+Thread Misconfiguration: To induce thread misconfiguration and CPU contention, we modify the thread affinity by using the taskset command. This involves setting a thread to run on a CPU core where it is not intended to execute.   
+
+  
+
+External Interference: Network contention arises when other radios, such as neighboring cells or external interference sources, operate on the same carrier frequency as the RAN (Radio Access Network). We are using USRP operating in the same frequency to create External interference. 
+
+FH Network Contention: Network contention occurs on a link responsible for transmitting fronthaul traffic. 
 Appendix: 
 
 Procedure-1(Used to calculate total runtime form exponential histogram) 
