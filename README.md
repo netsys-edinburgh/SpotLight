@@ -83,7 +83,7 @@ def calc_runtime(self, bin):
             total += items_per_bin * ((range_start + range_end) * range_size / 2) 
     return total
 ```
-### Procedure-2: (Used to Calculate Average/Mean from Shift Type Histogram)
+# Procedure-2: Calculate Average/Mean from Shift Type Histogram
 
 In a shift-type histogram, the bucket size is not fixed as in an exponential histogram. Instead, the **shift** value is used to calculate the size of each bucket. The formula for the bucket size is:
 
@@ -95,51 +95,39 @@ This means each bucket can hold \( 2^\text{shift} \) elements. Different shifts 
 - For **MCS (Modulation and Coding Scheme)**, the shift is 2.
 - For **PRB (Physical Resource Block)**, the shift is 5.
 
+## Procedure 2 : Calculate Average/Mean
+
 The procedure to calculate the average/mean from a shift-type histogram involves the following steps:
+
 ```python
-def calc_avg(self, bin,shift, min, max): 
+def calc_avg(self, bin, shift, min, max): 
+    total = 0 
+    BUCKET = 2 ** shift 
+    hist_value = [0] * 9 
+    cnt = 0 
+    
+    for i, bin_count in enumerate(bin): 
+        if bin_count > 0: 
+            cnt += 1 
 
-        total = 0 
+            # Determine the range for the current bin
+            if BUCKET * i <= min: 
+                range_start = min 
+            else: 
+                range_start = BUCKET * i 
 
-        BUCKET = 2**shift 
+            if BUCKET * (i + 1) - 1 > max: 
+                range_end = max 
+            else: 
+                range_end = BUCKET * (i + 1) - 1 
 
-        hist_value = [0] * 9 
+            # Calculate the size of the range and the items per bin
+            range_size = range_end - range_start + 1 
+            items_per_bin = bin_count / range_size 
 
-        cnt = 0 
+            # Calculate total for this bin using the formula
+            total += ((range_start + range_end) * range_size / 2) * items_per_bin 
 
-        for i, bin_count in enumerate(bin): 
+    # Return the average by dividing total by the sum of all bin counts
+    return total / sum(bin)
 
-            if bin_count > 0: 
-
-                cnt+=1 
-
-                if(BUCKET*i<=min): 
-
-                    range_start = min 
-
-                else: 
-
-                    range_start = BUCKET*i 
-
-                if(BUCKET*(i + 1) - 1> max): 
-
-                    range_end = max 
-
-                else: 
-
-                    range_end = BUCKET*(i + 1) - 1 
-
-                range_size = range_end - range_start + 1 
-
-                items_per_bin = bin_count / range_size 
-
-                # Calculate total for this bin using formulas 
-
-                total += ((range_start + range_end) * range_size / 2)*items_per_bin 
-
-                # hist_value[i] = total 
-
-                # total=0 
-
-        return total/sum(bin)
-```
