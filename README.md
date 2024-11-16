@@ -2,6 +2,7 @@
 
 This repository contains the schema and links to the dataset for **Anomaly Detection in OpenRAN**. The data was collected from an **Enterprise Grade Indoor 5G Testbed** using a Capgemini vDU, vCU, and Intel FlexRAN L1.
 
+bibtex here.
 ## Directory Structure
 
 ### `schema/`
