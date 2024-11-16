@@ -23,7 +23,8 @@ This folder contains:
 
 ## Dataset Info
 Download [Dataset](https://uoe-my.sharepoint.com/:f:/g/personal/s2325287_ed_ac_uk/EiJp8qnLIDtAoas0doqkotwBZh64s7RtjGoFK2t8U9bioA?e=WKvb02)
-We provide the **training and testing datasets** for anomaly detection.
+
+We provide the **baseline and anomalous datasets with label** for anomaly detection.
 
 This data was collected under the following traffic scenarios:  
 - **1 UE** and **5 UEs** generating TCP, UDP, video, file download, ping, and HTTP traffic.  
