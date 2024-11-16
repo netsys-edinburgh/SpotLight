@@ -22,7 +22,7 @@ This folder contains:
 - **One Raw KPI Sample** to illustrate the how raw data collected.
 
 ## Dataset Info
-Download [Dataset](https://uoe-my.sharepoint.com/:f:/g/personal/s2325287_ed_ac_uk/EiJp8qnLIDtAoas0doqkotwBZh64s7RtjGoFK2t8U9bioA?e=WKvb02)
+Download [Dataset](https://drive.google.com/drive/folders/1x7WnU6q9EodacUdh3iXRmi9FWrMD3rME?usp=sharing)
 
 We provide the **baseline and anomalous datasets with label** for anomaly detection.
 
