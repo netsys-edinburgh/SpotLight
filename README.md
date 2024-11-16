@@ -96,6 +96,7 @@ This means each bucket can hold \( 2^\text{shift} \) elements. Different shifts 
 - For **PRB (Physical Resource Block)**, the shift is 5.
 
 The procedure to calculate the average/mean from a shift-type histogram involves the following steps:
+```
 def calc_avg(self, bin,shift, min, max): 
 
         total = 0 
@@ -141,3 +142,4 @@ def calc_avg(self, bin,shift, min, max):
                 # total=0 
 
         return total/sum(bin)
+```
