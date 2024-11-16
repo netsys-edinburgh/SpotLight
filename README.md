@@ -82,7 +82,7 @@ def calc_runtime(self, bin):
             # Calculate total for this bin using formulas 
             total += items_per_bin * ((range_start + range_end) * range_size / 2) 
     return total
-
+```
 ### Procedure-2: (Used to Calculate Average/Mean from Shift Type Histogram)
 
 In a shift-type histogram, the bucket size is not fixed as in an exponential histogram. Instead, the **shift** value is used to calculate the size of each bucket. The formula for the bucket size is:
