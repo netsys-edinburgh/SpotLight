@@ -33,6 +33,7 @@ We created anomalies in the following components:
 - **Platform Anomalies** targeting the PDCP layer and MAC scheduler.  
 - **Network Anomalies** targeting the FH link.  
 - **Radio Anomalies** targeting the PHY layer.
+- **Mixed Anomalies** Any possible combination of above anomalies.
 
 ## Anomaly Creation
 
