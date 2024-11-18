@@ -1,8 +1,24 @@
-# Spotlight
+# SpotLight Dataset
 
-This repository contains the schema and links to the dataset for **Anomaly Detection in OpenRAN**. The data was collected from an **Enterprise Grade Indoor 5G Testbed** using a Capgemini vDU, vCU, and Intel FlexRAN L1.
+This repository contains the schema and links to the dataset for **Anomaly Detection in Open RAN**. The data was collected from an **Enterprise Grade Indoor 5G Testbed** at Microsoft Cambridge using a Capgemini vDU, vCU, and Intel FlexRAN L1.
 
-bibtex here.
+When using this dataset, please cite our paper using following bibtex:
+
+@inproceedings{736100ffac29485b9dbfbe01dc7c625d,
+title = "SpotLight: Accurate, explainable and efficient anomaly detection for Open RAN",
+abstract = "The Open RAN architecture, with disaggregated and virtualized RAN functions communicating over standardized interfaces, promises a diversified and multi-vendor RAN ecosystem. However, these same features contribute to increased operational complexity, making it highly challenging to troubleshoot RAN related performance issues and failures. Tackling this challenge requires a dependable, explainable anomaly detection method that Open RAN is currently lacking. To address this problem, we introduce SpotLight, a tailored system architecture with a distributed deep generative modeling based method running across the edge and cloud. SpotLight takes in a diverse, fine grained stream of metrics from the RAN and the platform, to continually detect and localize anomalies. It introduces a novel multi-stage generative model to detect potential anomalies at the edge using a light-weight algorithm, followed by anomaly confirmation and an explainability phase at the cloud, that helps identify the minimal set of KPIs that caused the anomaly. We evaluate SpotLight using the metrics collected from an enterprise-scale 5G Open RAN deployment in an indoor office building. Our results show that compared to a range of baseline methods, SpotLight yields significant gains in accuracy (13% higher F1 score), explainability (2.3 − 4× reduction in the number of reported KPIs) and efficiency (4 − 7× bandwidth reduction).",
+author = "Chuanhao Sun and Ujjwal Pawar and Molham Khoja and Xenofon Foukas and Marina, {Mahesh K.} and Bozidar Radunovic",
+year = "2023",
+month = dec,
+day = "15",
+language = "English",
+booktitle = "Proceedings of the 30th Annual International Conference on Mobile Computing and Networking",
+publisher = "ACM",
+note = "The 30th Annual International Conference On Mobile Computing And Networking, MobiCom 2024 ; Conference date: 18-11-2024 Through 22-11-2024",
+url = "https://www.sigmobile.org/mobicom/2024/",
+
+}
+
 ## Directory Structure
 
 ### `schema/`
