@@ -2,7 +2,9 @@
 
 This repository contains the schema and links to the dataset for **Anomaly Detection in Open RAN**. The data was collected from an **Enterprise Grade Indoor 5G Testbed** at Microsoft Cambridge using a Capgemini vDU, vCU, and Intel FlexRAN L1.
 
-When using this dataset, please cite our paper using following bibtex:
+When using this dataset, please cite our paper using following =bibtex=
+#+begin_src bibtex:
+
 #+begin_src bibtex
 @inproceedings{736100ffac29485b9dbfbe01dc7c625d,
 title = "SpotLight: Accurate, explainable and efficient anomaly detection for Open RAN",
