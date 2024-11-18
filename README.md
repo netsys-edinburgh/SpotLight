@@ -13,7 +13,7 @@ month = Nov,
 booktitle = "Proceedings of the 30th Annual International Conference on Mobile Computing and Networking",  
 publisher = "ACM",  
 note = "The 30th Annual International Conference On Mobile Computing And Networking, MobiCom 2024 ; Conference date: 18-11-2024 Through 22-11-2024",  
-url = "\url{https://www.sigmobile.org/mobicom/2024/}" 
+url = "https://www.sigmobile.org/mobicom/2024/"
 }
 ```
 
