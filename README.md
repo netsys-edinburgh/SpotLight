@@ -4,19 +4,19 @@ This repository contains the schema and links to the dataset for **Anomaly Detec
 
 When using this dataset, please cite our paper using following =bibtex=
 
-#+begin_src bibtex
-@inproceedings{736100ffac29485b9dbfbe01dc7c625d,
-title = "SpotLight: Accurate, explainable and efficient anomaly detection for Open RAN",
-author = "Chuanhao Sun and Ujjwal Pawar and Molham Khoja and Xenofon Foukas and Marina, {Mahesh K.} and Bozidar Radunovic",
-year = "2024",
-month = Nov,
-booktitle = "Proceedings of the 30th Annual International Conference on Mobile Computing and Networking",
-publisher = "ACM",
-note = "The 30th Annual International Conference On Mobile Computing And Networking, MobiCom 2024 ; Conference date: 18-11-2024 Through 22-11-2024",
-url = "https://www.sigmobile.org/mobicom/2024/",
+
+@inproceedings{736100ffac29485b9dbfbe01dc7c625d,  
+title = "SpotLight: Accurate, explainable and efficient anomaly detection for Open RAN",  
+author = "Chuanhao Sun and Ujjwal Pawar and Molham Khoja and Xenofon Foukas and Marina, {Mahesh K.} and Bozidar Radunovic",  
+year = "2024",  
+month = Nov,  
+booktitle = "Proceedings of the 30th Annual International Conference on Mobile Computing and Networking",  
+publisher = "ACM",  
+note = "The 30th Annual International Conference On Mobile Computing And Networking, MobiCom 2024 ; Conference date: 18-11-2024 Through 22-11-2024",  
+url = [https://www.sigmobile.org/mobicom/2024/](https://www.sigmobile.org/mobicom/2024/)  
 }
 
-#+end_src
+
 ## Directory Structure
 
 ### `schema/`
