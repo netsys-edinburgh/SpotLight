@@ -4,7 +4,7 @@ This repository contains the schema and links to the dataset for **Anomaly Detec
 
 When using this dataset, please cite our paper using following =bibtex=
 
-```latex
+```bibtex
 @inproceedings{736100ffac29485b9dbfbe01dc7c625d,  
 title = "SpotLight: Accurate, explainable and efficient anomaly detection for Open RAN",  
 author = "Chuanhao Sun and Ujjwal Pawar and Molham Khoja and Xenofon Foukas and Marina, {Mahesh K.} and Bozidar Radunovic",  
