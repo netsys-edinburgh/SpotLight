@@ -5,45 +5,6 @@ This repository contains the schema and links to the dataset for **Anomaly Detec
 When using this dataset, please cite our paper using following =bibtex=
 
 #+begin_src bibtex
-@inproceedings{10.1145/3485983.3494844,
-author = {Xu, Kai and Singh, Rajkarn and Fiore, Marco and Marina, Mahesh K. and Bilen, Hakan and Usama, Muhammad and Benn, Howard and Ziemlicki, Cezary},
-title = {SpectraGAN: Spectrum Based Generation of City Scale Spatiotemporal Mobile Network Traffic Data},
-year = {2021},
-isbn = {9781450390989},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3485983.3494844},
-doi = {10.1145/3485983.3494844},
-abstract = {City-scale spatiotemporal mobile network traffic data can support numerous applications in and beyond networking. However, operators are very reluctant to share their data, which is curbing innovation and research reproducibility. To remedy this status quo, we propose SpectraGAN, a novel deep generative model that, upon training with real-world network traffic measurements, can produce high-fidelity synthetic mobile traffic data for new, arbitrary sized geographical regions over long periods. To this end, the model only requires publicly available context information about the target region, such as population census data. SpectraGAN is an original conditional GAN design with the defining feature of generating spectra of mobile traffic at all locations of the target region based on their contextual features. Evaluations with mobile traffic measurement datasets collected by different operators in 13 cities across two European countries demonstrate that SpectraGAN can synthesize more dependable traffic than a range of representative baselines from the literature. We also show that synthetic data generated with SpectraGAN yield similar results to that with real data when used in applications like radio access network infrastructure power savings and resource allocation, or dynamic population mapping.},
-booktitle = {Proceedings of the 17th International Conference on Emerging Networking EXperiments and Technologies},
-pages = {243–258},
-numpages = {16},
-keywords = {deep generative modeling, mobile network traffic data, conditional GANs, synthetic data generation},
-location = {Virtual Event, Germany},
-series = {CoNEXT '21}
-}
-#+end_src#+begin_src bibtex
-@inproceedings{10.1145/3485983.3494844,
-author = {Xu, Kai and Singh, Rajkarn and Fiore, Marco and Marina, Mahesh K. and Bilen, Hakan and Usama, Muhammad and Benn, Howard and Ziemlicki, Cezary},
-title = {SpectraGAN: Spectrum Based Generation of City Scale Spatiotemporal Mobile Network Traffic Data},
-year = {2021},
-isbn = {9781450390989},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3485983.3494844},
-doi = {10.1145/3485983.3494844},
-abstract = {City-scale spatiotemporal mobile network traffic data can support numerous applications in and beyond networking. However, operators are very reluctant to share their data, which is curbing innovation and research reproducibility. To remedy this status quo, we propose SpectraGAN, a novel deep generative model that, upon training with real-world network traffic measurements, can produce high-fidelity synthetic mobile traffic data for new, arbitrary sized geographical regions over long periods. To this end, the model only requires publicly available context information about the target region, such as population census data. SpectraGAN is an original conditional GAN design with the defining feature of generating spectra of mobile traffic at all locations of the target region based on their contextual features. Evaluations with mobile traffic measurement datasets collected by different operators in 13 cities across two European countries demonstrate that SpectraGAN can synthesize more dependable traffic than a range of representative baselines from the literature. We also show that synthetic data generated with SpectraGAN yield similar results to that with real data when used in applications like radio access network infrastructure power savings and resource allocation, or dynamic population mapping.},
-booktitle = {Proceedings of the 17th International Conference on Emerging Networking EXperiments and Technologies},
-pages = {243–258},
-numpages = {16},
-keywords = {deep generative modeling, mobile network traffic data, conditional GANs, synthetic data generation},
-location = {Virtual Event, Germany},
-series = {CoNEXT '21}
-}
-#+end_src
-
-
-#+begin_src bibtex
 @inproceedings{736100ffac29485b9dbfbe01dc7c625d,
 title = "SpotLight: Accurate, explainable and efficient anomaly detection for Open RAN",
 author = "Chuanhao Sun and Ujjwal Pawar and Molham Khoja and Xenofon Foukas and Marina, {Mahesh K.} and Bozidar Radunovic",
@@ -54,6 +15,7 @@ publisher = "ACM",
 note = "The 30th Annual International Conference On Mobile Computing And Networking, MobiCom 2024 ; Conference date: 18-11-2024 Through 22-11-2024",
 url = "https://www.sigmobile.org/mobicom/2024/",
 }
+
 #+end_src
 ## Directory Structure
 
